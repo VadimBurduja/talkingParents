@@ -1,5 +1,5 @@
 Feature: Shared Calendar Event Management and Login
-
+@ui
   Scenario: Parent A logs in and creates a shared calendar event
     When the user clicks the Sign In button
     And the user logs in as "Parent A"
@@ -7,7 +7,7 @@ Feature: Shared Calendar Event Management and Login
     And the user creates a new event titled "Parent-Teacher Conference"
     Then the event should appear in Parent A's calendar
 
-@test
+@test @ui
 Scenario: Parent B logs in and sees the notification
   When the user clicks the Sign In button
   And the user logs in as "Parent B"

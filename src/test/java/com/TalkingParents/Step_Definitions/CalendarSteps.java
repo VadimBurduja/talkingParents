@@ -5,7 +5,6 @@ import com.TalkingParents.Pages.CalendarPage;
 import com.TalkingParents.Pages.DashboardPage;
 import com.TalkingParents.Pages.LoginPage;
 import com.TalkingParents.Utilities.BrowserUtils;
-import com.TalkingParents.Utilities.ConfigurationReader;
 import com.TalkingParents.Utilities.Driver;
 import io.cucumber.java.en.*;
 import org.junit.Assert;

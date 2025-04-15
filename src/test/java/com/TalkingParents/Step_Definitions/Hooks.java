@@ -10,14 +10,14 @@ import org.openqa.selenium.TakesScreenshot;
 import java.time.Duration;
 
 public class Hooks {
-    @Before()
+    @Before("@ui")
     public void setUp() {
         Driver.getDriver().manage().timeouts().implicitlyWait(Duration.ofSeconds(30));
         Driver.getDriver().manage().window().maximize();
         Driver.getDriver().get(ConfigurationReader.getProperty("TalkingParentsUrl"));
     }
 
-    @After()
+    @After("@ui")
     public void tearDown(Scenario scenario) {
         if (scenario.isFailed()) {
            final byte[] screenshot = ((TakesScreenshot) Driver.getDriver()).getScreenshotAs(OutputType.BYTES);
