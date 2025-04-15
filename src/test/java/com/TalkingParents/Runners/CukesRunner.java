@@ -15,7 +15,7 @@ import org.junit.runner.RunWith;
         features = "src/test/resources/features",              // Feature files
         glue = "com.TalkingParents.Step_Definitions",          // Step Definitions
         dryRun = false,                                        // True: checks steps only
-        tags = "",                                       // You can change to @regression, etc.
+        tags = "@ui",                                       // You can change to @regression, etc.
         publish = true                                         // Publishes to reports.cucumber.io
 )
 public class CukesRunner {
